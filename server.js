@@ -10,3 +10,6 @@ app.listen(process.env.PORT,()=>{
     console.log(`Server is running on port ${process.env.PORT}`);
 })
 app.use("/email",emailroute)
+app.get("/",(req,res)=>{
+    res.send("Welcome to Email Sending API")
+})
